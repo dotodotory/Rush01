@@ -6,7 +6,7 @@
 /*   By: jiykim <jiykim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/25 15:31:57 by jiykim            #+#    #+#             */
-/*   Updated: 2020/10/25 16:47:44 by jiykim           ###   ########.fr       */
+/*   Updated: 2020/10/25 16:52:03 by jiykim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		argc_error(int argc)
 	return (1);
 }
 
-int		size_error(int *str)
+int		size_error(char *str)
 {
 	int size;
 
