@@ -6,7 +6,7 @@
 /*   By: jiykim <jiykim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/25 15:31:57 by jiykim            #+#    #+#             */
-/*   Updated: 2020/10/25 16:52:03 by jiykim           ###   ########.fr       */
+/*   Updated: 2020/10/25 17:09:30 by jiykim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int		layout_error(char *str)
 {
 	int i;
 
+	i = 0;
 	while (str[i] != '\0')
 	{
 		if (i % 2 == 1)
@@ -47,7 +48,7 @@ int		layout_error(char *str)
 		}
 		else
 		{
-			if (str[i] >= '1' && str[i] <= '4')
+			if (str[i] < '1' || str[i] > '4')
 				return (0);
 		}
 		i++;
@@ -59,17 +60,17 @@ int		handle_error(int argc, char **argv)
 {
 	if (argc_error(argc) == 0)
 	{
-		write(1, "argument number error\n", 21);
+		write(1, "argument number error\n", 22);
 		return (0);
 	}
 	if (size_error(argv[1]) == 0)
 	{
-		write(1, "string size error\n", 17);
+		write(1, "string size error\n", 18);
 		return (0);
 	}
 	if (layout_error(argv[1]) == 0)
 	{
-		write(1, "space error or not 1 to 4\n", 25);
+		write(1, "space error or not 1 to 4\n", 26);
 		return (0);
 	}
 	return (1);
