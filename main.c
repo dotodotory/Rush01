@@ -6,7 +6,7 @@
 /*   By: jiykim <jiykim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/25 14:57:58 by jiykim            #+#    #+#             */
-/*   Updated: 2020/10/25 17:51:01 by jiykim           ###   ########.fr       */
+/*   Updated: 2020/10/25 20:26:13 by jiykim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,9 @@ int		main(int argc, char **argv)
 	while (i < N)
 		arr[i++] = (int *)malloc(sizeof(int) * N);
 	str_int(argv[1], arr);
+	i = 0;
+	while (i < N)
+		free(arr[i++]);
 	free(arr);
 	return (0);
 }
