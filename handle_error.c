@@ -6,13 +6,15 @@
 /*   By: jiykim <jiykim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/25 15:31:57 by jiykim            #+#    #+#             */
-/*   Updated: 2020/10/25 16:12:19 by jiykim           ###   ########.fr       */
+/*   Updated: 2020/10/25 16:37:20 by jiykim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "header.h"
+
 int		argc_error(int argc)
 {
-	if(argc != 2)
+	if (argc != 2)
 		return (0);
 	return (1);
 }
@@ -22,7 +24,7 @@ int		size_error(int *str)
 	int size;
 
 	size = 0;
-	while(*str)
+	while (*str)
 	{
 		str++;
 		size++;
