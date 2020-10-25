@@ -6,7 +6,7 @@
 /*   By: jiykim <jiykim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/25 15:31:57 by jiykim            #+#    #+#             */
-/*   Updated: 2020/10/25 16:37:20 by jiykim           ###   ########.fr       */
+/*   Updated: 2020/10/25 16:47:44 by jiykim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ int		handle_error(int argc, char **argv)
 	}
 	if (layout_error(argv[1]) == 0)
 	{
-		write(1, "space error\n", 11);
+		write(1, "space error or not 1 to 4\n", 25);
 		return (0);
 	}
 	return (1);
