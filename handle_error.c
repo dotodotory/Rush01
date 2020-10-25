@@ -6,9 +6,17 @@
 /*   By: jiykim <jiykim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/25 15:31:57 by jiykim            #+#    #+#             */
-/*   Updated: 2020/10/25 17:09:30 by jiykim           ###   ########.fr       */
+/*   Updated: 2020/10/25 20:56:26 by sna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** argc_error() = Generate an error when no input in array
+** size_errer() = Generate an error when the input string size is not 31
+** layout_error() = Generate an error
+** if the input value is not spaces and numbers,
+** or if it is not values in the range 1 to 4.
+*/
 
 #include "header.h"
 

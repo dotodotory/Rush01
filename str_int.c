@@ -6,9 +6,14 @@
 /*   By: jiykim <jiykim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/25 13:09:02 by jiykim            #+#    #+#             */
-/*   Updated: 2020/10/25 17:43:46 by jiykim           ###   ########.fr       */
+/*   Updated: 2020/10/25 20:59:42 by sna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** str_int() = Changes even number of input values
+** from character to integer.
+*/
 
 #include "header.h"
 

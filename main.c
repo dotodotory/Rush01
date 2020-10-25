@@ -6,9 +6,17 @@
 /*   By: jiykim <jiykim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/25 14:57:58 by jiykim            #+#    #+#             */
-/*   Updated: 2020/10/25 20:26:13 by jiykim           ###   ########.fr       */
+/*   Updated: 2020/10/25 20:47:21 by sna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** received and verified values from the user.
+** if the input value is ok,
+** dynamically allocate the array to which it is assigned.
+** Then, change the string into an integer and put it in.
+** When the process is finished, return the memory.
+*/
 
 #include "header.h"
 
